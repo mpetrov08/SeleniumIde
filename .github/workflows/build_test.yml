@@ -22,7 +22,7 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install -y google-chrome-stable
-    - name: Restore dependencies
+    - name: Restore all dependencies
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore
